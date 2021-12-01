@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+/* resets css page so that there is no emptpy space */
+*{
+  margin:0px;
+  padding:0%;
+  box-sizing: border-box; 
+  font-family: 'Noto Sans Mono', sans-serif;
+}
+/* margin is the space around the element border and padding is the space between the border and content  */
+/*Border box makes content be placed all together*/
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+/* Make the body fill up the whole page */
+h1 {
+  color:white;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+p {
+  font-family: verdana;
+  font-size: 15px;
+  color:white;
+}
+.bottom{
+  position: fixed;
+  bottom: 0px;
+  width:100%;
+  background: gray;
+  text-align: center;
+}
+/* fixed to the bottom of the page, and position is fixed */
+.hero-img {
+  background-image: url(images/iowa\ blurred.png);
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-size: cover;
+}
+/* background size covers whole page instead of individual images */
+/* position absolute put text on images */
+.hero-txt{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+.hero-txt h1{
+  padding: 20px;
+}
+/*about page*/
+/* transfrom text exactly where it needs to be,*/
+/* hero image for about page*/
+.hero-img2 {
+  background-image: url(images/iowaflowersblurred.png);
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-size: cover;
+  
+}
+/*hero text for about page*/
+.hero-txt2{
+  text-align:left;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+ 
+}
+/* add spacing and aligned center*/
+.hero-txt2 table{
+  background-color:black;
+}
+.hero-txt2 table thead tr th{
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  font-size: 25px;
+}
+.hero-txt2 table tbody tr td {
+  font-size: 20px;
+  padding: 30px 10px;
+  text-align: center;
+  color:white;
+}
+/*about page*/
+.home ul li a{
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding:30px 200px;
+}
+/*position stays in one place */
+header ul {
+  display: flex ;
+}
+/* display flex makes the header side by side */
+header ul li {
+  list-style: none;
+}
+/* first padding top down, second left right*/
+header ul li a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+}
+/* Whenever your cursor is over the nav content*/
+
+header ul li a:hover {
+  background-color: lightblue;
+}
+header ul li a.active {
+  background-color: lightblue;
+}
+
+.contact {
+  border: 5px black;
+  margin-top: 100px;
+  padding: 30px 30px;
+  text-align: center;
+
+}
+button {
+  float: right;
+  padding: 14px 16px;
+  border-radius: 50px;
+  margin-right: 48%;
+
+}
+/*border radius circle */
